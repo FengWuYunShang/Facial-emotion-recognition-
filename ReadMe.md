@@ -23,26 +23,29 @@
     ![伤心](./data/伤心.png)
 4.  ### 如何训练、测试以及应用
 
-       ```pyhton 
-    parser = argparse.ArgumentParser(description='Fer2013 Emotion Recognition')
-    parser.add_argument('--model', type=str, default='CNN', help='Model to use: CNN, VGG, ResNet, mini_XCEPTION, and Attention~')
-    parser.add_argument('--mode', type=str, default='train', help='Mode: train, test, demo')
-    parser.add_argument('--optimizer', type=str, default='adam', help='Optimizer: sgd, adam, rmsprop')
-    parser.add_argument('--loss', type=str, default='cross_entropy', help='Loss function: cross_entropy, mse')
-    parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
-    parser.add_argument('--epochs', type=int, default=10, help='Number of epochs')
-    parser.add_argument('--batch_size', type=int, default=64, help='Batch size')
-    args = parser.parse_args()
-    ```
-    **示例：**
-        **若想训练/测试/演示某个模型，在终端输入类似指令即可**
+```pyhton 
+   parser = argparse.ArgumentParser(description='Fer2013 Emotion Recognition')
+   parser.add_argument('--model', type=str, default='CNN', help='Model to use: CNN, VGG, ResNet, mini_XCEPTION, and Attention~')
+   parser.add_argument('--mode', type=str, default='train', help='Mode: train, test, demo')
+   parser.add_argument('--optimizer', type=str, default='adam', help='Optimizer: sgd, adam, rmsprop')
+   parser.add_argument('--loss', type=str, default='cross_entropy', help='Loss function: cross_entropy, mse')
+   parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
+   parser.add_argument('--epochs', type=int, default=10, help='Number of epochs')
+   parser.add_argument('--batch_size', type=int, default=64, help='Batch size')
+   args = parser.parse_args()
+```
     
-          python main.py --mode train --model AttentionCNN --epochs 20 --lr 0.0015
-  
-          python main.py --mode test --model AttentionCNN
-      
-          python main.py --mode demo --model AttentionCNN
-    
+   **示例：**
+           **若想训练/测试/演示某个模型，在终端输入类似指令即可**
+```pyhton
+   python main.py --mode train --model AttentionCNN --epochs 20 --lr 0.0015
+```
+```python
+   python main.py --mode test --model AttentionCNN
+```
+```python      
+   python main.py --mode demo --model AttentionCNN
+```   
 5. ### 列表里的一些东西
   
   - #### CNNepoch_1.phg：训练时每个Epoch的loss曲线
