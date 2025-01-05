@@ -7,21 +7,20 @@
   - #### ResNet (with attention):59.2000%
   - #### mini_XCEPTION (with attention):58.4291%
   - #### VGG (with attention):24.7144% 呜呜呜~~~（猜测是模型本身写的有问题）
-
 2.  ### 演示截图
  
   - #### 开心
-    ![开心]
+    ![开心](./data/pic/开心.png)
   - #### 惊讶
-    
+    ![惊讶](./data/pic/惊讶.png)
   - #### 厌恶
-    
+    ![厌恶](./data/pic/厌恶.png)
   - #### 中立
-    
+    ![中立](./data/pic/中立.png)
   - #### 生气
-    
+    ![生气](./data/pic/生气.png)
   - #### 伤心
-    
+    ![伤心](./data/pic/伤心.png)
 4.  ### 如何训练、测试以及应用
 
     ```pyhton 
@@ -47,10 +46,11 @@
   - #### data/emojis：demo中显示的表情（抹茶旦旦）
   - #### data/test && data/train：测试集和训练集（里面包括验证集）
   - #### data/video：demo中的视频 
-4. ### 函数说明
+6. ### 函数说明
+
   - #### demo：演示代码
   - #### main：主函数
   - #### train && test && model：训练模型、测试模型、五个需要训练的模型
   - #### haarcascade_frontalface_default.xml：OpenCv中检测人脸的模型
   - #### Csv_to_Image：将fer2013.csv里的内容转换为Image
-
+    
