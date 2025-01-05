@@ -1,4 +1,4 @@
-## 深度学习小组作业
+# 深度学习小组作业 
 
 1. ### 各模型的准确率
    
@@ -23,7 +23,7 @@
     ![伤心](./data/伤心.png)
 4.  ### 如何训练、测试以及应用
 
-    ```pyhton 
+       ```pyhton 
     parser = argparse.ArgumentParser(description='Fer2013 Emotion Recognition')
     parser.add_argument('--model', type=str, default='CNN', help='Model to use: CNN, VGG, ResNet, mini_XCEPTION, and Attention~')
     parser.add_argument('--mode', type=str, default='train', help='Mode: train, test, demo')
@@ -36,9 +36,13 @@
     ```
     **示例：**
         **若想训练/测试/演示某个模型，在终端输入类似指令即可**
-        `python main.py --mode train --model AttentionCNN --epochs 20 --lr 0.0015`
-        `python main.py --mode test --model AttentionCNN`
-        `python main.py --mode demo --model AttentionCNN`
+    
+          python main.py --mode train --model AttentionCNN --epochs 20 --lr 0.0015
+  
+          python main.py --mode test --model AttentionCNN
+      
+          python main.py --mode demo --model AttentionCNN
+    
 5. ### 列表里的一些东西
   
   - #### CNNepoch_1.phg：训练时每个Epoch的loss曲线
@@ -53,4 +57,9 @@
   - #### train && test && model：训练模型、测试模型、五个需要训练的模型
   - #### haarcascade_frontalface_default.xml：OpenCv中检测人脸的模型
   - #### Csv_to_Image：将fer2013.csv里的内容转换为Image
+
+
+
+
+
     
