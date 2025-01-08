@@ -1,3 +1,8 @@
+#参考来源：https://www.cnblogs.com/weiba180/p/12600259.html
+#         https://github.com/oarriaga/face_classification
+#         https://github.com/xionghc/Facial-Expression-Recognition.git
+
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
